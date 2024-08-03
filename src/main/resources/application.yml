@@ -8,7 +8,7 @@ server:
 
 eureka:
   instance:
-    hostname: ${EUREKA_SERVER_HOSTNAME}
+    hostname: https://discoveryservice-1.onrender.com
     non-secure-port-enabled: false
     secure-port-enabled: true
     secure-port: 8761
