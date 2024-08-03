@@ -8,7 +8,6 @@ WORKDIR /app
 COPY . /app
 
 RUN chmod +x ./mvnw
-RUN ls -la
 
 
 # Package the application
