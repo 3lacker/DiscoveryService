@@ -1,0 +1,34 @@
+server:
+  port: 8761
+  ssl:
+    enabled: true
+    key-store: classpath:keystore.jks
+    key-store-password: ${KEY_STORE_PASSWORD}
+    key-password: ${KEY_PASSWORD}
+
+eureka:
+  instance:
+    hostname: ${EUREKA_SERVER_HOSTNAME}
+    non-secure-port-enabled: false
+    secure-port-enabled: true
+    secure-port: 8761
+    prefer-ip-address: true
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    enable-self-preservation: false
+
+spring:
+  profiles:
+    active: default
+
+logging:
+  level:
+    com.netflix.eureka: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
