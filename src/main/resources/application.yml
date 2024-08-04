@@ -23,10 +23,6 @@ spring:
   profiles:
     active: default
 
-logging:
-  level:
-    com.netflix.eureka: DEBUG
-
 management:
   endpoints:
     web:
