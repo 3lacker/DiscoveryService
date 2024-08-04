@@ -1,11 +1,8 @@
 server:
-  port: 10000
 
 eureka:
   instance:
     hostname: https://discoveryservice-1.onrender.com
-    secure-port-enabled: true
-    secure-port: 10000
   client:
     register-with-eureka: false
     fetch-registry: false
