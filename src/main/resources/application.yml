@@ -1,18 +1,11 @@
 server:
-  port: 8761
-  ssl:
-    enabled: true
-    key-store: classpath:keystore.jks
-    key-store-password: ${KEY_STORE_PASSWORD}
-    key-password: ${KEY_PASSWORD}
+  port: 10000
 
 eureka:
   instance:
     hostname: https://discoveryservice-1.onrender.com
-    non-secure-port-enabled: false
     secure-port-enabled: true
-    secure-port: 8761
-    prefer-ip-address: true
+    secure-port: 10000
   client:
     register-with-eureka: false
     fetch-registry: false
